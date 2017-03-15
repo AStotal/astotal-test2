@@ -54,7 +54,7 @@
     <div class="btn-group btn-group-justified">
         <div class="btn-group">
             <c:url value="/todo/${filter}/${currentPage-1}" var="prevPage"/>
-            <a class="btn btn-default ${(currentPage == 1 || currentPage == null) ? 'disabled':''}" href="${currentPage == 1 ? '#': prevPage}">Prev</a>
+            <a class="btn btn-default ${currentPage == 1 ? 'disabled':''}" href="${currentPage == 1 ? '#': prevPage}">Prev</a>
         </div>
         <div class="btn-group">
             <c:url var="nextPage" value="/todo/${filter}/${currentPage+1}"/>

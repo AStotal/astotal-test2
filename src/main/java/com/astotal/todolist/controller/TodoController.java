@@ -27,6 +27,7 @@ public class TodoController {
     public String listTodo(Model model) {
         model.addAttribute("filter", "all");
         model.addAttribute("todoItem", new Todo());
+        model.addAttribute("currentPage", 1);
         model.addAttribute("listTodo", this.todoService.getTodoList("all"));
         model.addAttribute("hasTodos", this.todoService.getTodoList("all", 2, 10).size() > 0);
 
