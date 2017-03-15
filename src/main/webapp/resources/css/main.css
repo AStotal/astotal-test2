@@ -1,0 +1,49 @@
+body {
+    margin: 10px;
+}
+
+.form-control.large-input {
+    height: 54px;
+    font-size: 20px;
+}
+
+.form-control.inactive,
+fieldset[disabled] .form-control.inactive{
+    cursor: auto;
+    /*font-size: 20px;*/
+    border: solid 1px #ccc;
+    background-color: #fff;
+}
+
+.curved{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.invis{
+    opacity:0;
+    position:absolute;
+    left:9999px;"
+}
+
+.table.text-center{
+    vertical-align: middle;
+}
+
+div.onhover {
+    display: none;
+}
+tr:hover div.onhover {
+    display: block;
+}
+
+tr.tr-lg {
+    height: 60px;
+}
+
+td div.doneState {
+    color: #aaa;
+    text-decoration: line-through;
+}
